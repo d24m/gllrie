@@ -1,10 +1,10 @@
 Bash-Script for creating a simple web-gallery
 ============
 
-Based on (html5slides)[http://code.google.com/p/html5slides]
+Based on [html5slides](http://code.google.com/p/html5slides)
 
 ## Requirements
-(ImageMagick)[http://www.imagemagick.org]
+[ImageMagick](http://www.imagemagick.org)
 
 ## Usage
     cp mkgllry /path/to/pictures

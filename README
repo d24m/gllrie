@@ -1,0 +1,13 @@
+Bash-Script for creating a simple web-gallery
+
+Based on (html5slides)[http://code.google.com/p/html5slides]
+
+Requirements:
+ImageMagick
+
+Usage:
+cp mkgllry /path/to/pictures
+cd /path/to/pictures
+./mkgllry
+scp -r gllry webmaster@webserver.example.com:/var/www/mygallery
+google-chrome webserver.example.com/mygallery

@@ -1,16 +1,16 @@
 #!/bin/bash
 # This Project based upon html5slides (http://code.google.com/p/html5slides/)
-# For more information please visit http://github.com/d24m/gllry
+# For more information please visit http://github.com/d24m/gllrie
 
-mkdir -p gllry
+mkdir -p gllrie
 ### HTML HEADER START ###
-cat > ./gllry/index.html << EOF 
+cat > ./gllrie/index.html << EOF 
 <!DOCTYPE html>
 
 <!--
-  gllry - Bash-Script for creating a simple web-gallery
+  gllrie - Bash-Script for creating a simple web-gallery
   based on html5slides (http://code.google.com/p/html5slides/)
-  For more information please visit http://github.com/d24m/gllry
+  For more information please visit http://github.com/d24m/gllrie
 
   Original: template/index.html
   Google HTML5 slide template
@@ -23,12 +23,12 @@ cat > ./gllry/index.html << EOF
 
   URL: http://code.google.com/p/html5slides/
   
-  Changes: Changed title to gllry and insert slides.js and styles.css
+  Changes: Changed title to gllrie and insert slides.js and styles.css
 -->
 
 <html>
   <head>
-    <title>gllry</title>
+    <title>gllrie</title>
 
     <meta charset='utf-8'>
     <script>
@@ -82,13 +82,13 @@ EOF
 
 ### HTML BODY START ###
 ls -1 ./*.{jpg,png,gif,JPG,PNG,GIF} 2>/dev/null | while read p; do
-	convert $p -resize 900x700 ./gllry/$p;
-	echo "<article class='fill'><p><img src='$p'></p></article>" >> ./gllry/index.html
+	convert $p -resize 900x700 ./gllrie/$p;
+	echo "<article class='fill'><p><img src='$p'></p></article>" >> ./gllrie/index.html
 done
 ### HTML BODY END ###
 
 ### HTML FOOTER START ###
-cat >> ./gllry/index.html << EOF
+cat >> ./gllrie/index.html << EOF
     </section>
   </body>
 </html>
